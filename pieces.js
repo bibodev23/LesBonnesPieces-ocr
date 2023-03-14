@@ -1,7 +1,7 @@
 // Récupération des pièces depuis le fichier JSON
 const reponse = await fetch('pieces-autos.json');
 const pieces = await reponse.json();
-
+// création d'une fonction pour augmenter le compteur qui indique la la position de chaque article
 for (let i = 0; i < pieces.length; i++) {
 
     const article = pieces[i];
@@ -62,6 +62,7 @@ boutonDescription.addEventListener("click", function () {
     console.log(pieceDescription);
 })
 
+// création bouton ordre décroissant
 const boutonTrier2 = document.querySelector(".btn-trier2");
 boutonTrier2.addEventListener("click", function () {
     const piecesOrdonnees2 = Array.from(pieces);
@@ -70,4 +71,19 @@ boutonTrier2.addEventListener("click", function () {
     });
     console.log(pieces);
 });
+
+
+// // Fonction lambda
+// piece => piece.nom
+
+// // Fonction normale
+// function (piece) {
+//     return piece.nom;
+// }
+// création dbouton pour afficher seulement les noms des produits
+const boutonNom = document.querySelector(".btn-nom");
+boutonNom.addEventListener("click", function () {
+    const noms = pieces.map(piece => piece.nom);
+    console.log(noms);
+})
 
