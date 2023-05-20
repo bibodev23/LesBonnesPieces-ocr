@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
+body 
+{
 	max-width: 1200px;
 	margin: auto;
 	padding: 16px;
 	font-family: 'Montserrat', sans-serif;
 }
 
-header {
+header 
+{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -17,20 +19,24 @@ header {
 	text-align: center;
 	color: white;
 }
-header img {
+header img 
+{
 	height: 60px;
 	margin-left: 1rem;
 }
-header h1 {
+header h1 
+{
 	flex-grow: 1;
 }
 
-main {
+main 
+{
 	display: flex;
 	flex-direction: row;
 }
 
-.filtres {
+.filtres 
+{
 	border-radius: 4px;
 	box-shadow: 0px 0px 4px gray;
 	margin: 8px;
@@ -38,48 +44,38 @@ main {
 	min-width: 300px;
 	min-height: 400px;
 }
-.filtres h3 {
+.filtres h3 
+{
 	text-align: center;
 }
 
-.fiches {
+.fiches 
+{
 	flex: 1;
 	margin: 8px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 4px;
+	border: ;
 }
-.fiches article {
+.fiches article 
+{
 	border: 1px solid black;
-	border-radius: 8px;
 	padding: 4px;
 }
-.fiches article img {
+.fiches article img 
+{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 200px;
 }
-.fiches article p {
+.fiches article p 
+{
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-.fiches article h2 {
+.fiches article h2 
+{
 	text-align: center;
-}
-
-button
-{
-	background-color: #7451eb;
-	color: white;
-	border: 1px solid black;
-	border-radius: 8px;
-	margin: 5px auto;
-	display: flex;
-	font-size: 1.3em;
-}
-
-button:hover
-{
-	cursor: pointer;
 }
